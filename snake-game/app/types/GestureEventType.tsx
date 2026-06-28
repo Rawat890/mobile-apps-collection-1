@@ -3,8 +3,8 @@ import React from 'react'
 
 export interface GestureEventType {
   nativeEvent:{
-    translateX: number,
-    translateY: number
+    translationX: number,
+    translationY: number
   }
 }
 
