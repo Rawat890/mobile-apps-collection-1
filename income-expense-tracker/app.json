@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "income-expense-tracker",
-    "slug": "income-expense-tracker",
+    "name": "budget-buddy",
+    "slug": "budget-buddy",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
