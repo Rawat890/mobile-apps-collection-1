@@ -9,6 +9,7 @@ import {
   MOVE_INTERVAL,
   SNAKE_INITIAL_POSITION,
   GAME_BOUNDS,
+  SCORE_INCREMENT,
 } from '../utils/constants'
 import Snake from './Snake'
 import Food from './Food'
@@ -90,9 +91,8 @@ const Game = () => {
       // ✅ FIX: grow the full snake (keep all segments)
       setSnake([newSnakeHead, ...snake])
       setFood(randomFoodPosition(GAME_BOUNDS.xMax, GAME_BOUNDS.yMax))
-      setScore(prev => prev + 10)
+      setScore(score + SCORE_INCREMENT)
     } else {
-      // ✅ FIX: slice(0, snake.length - 1) not slice(0, 1)
       setSnake([newSnakeHead, ...snake.slice(0, snake.length - 1)])
     }
   }
