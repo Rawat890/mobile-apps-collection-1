@@ -1,0 +1,21 @@
+import { View, Text } from 'react-native'
+import React from 'react'
+
+export interface GestureEventType {
+  nativeEvent:{
+    translateX: number,
+    translateY: number
+  }
+}
+
+export interface Coordinate{
+  x: number,
+  y: number
+}
+
+export enum Direction{
+  UP,
+  DOWN,
+  LEFT,
+  RIGHT
+}
