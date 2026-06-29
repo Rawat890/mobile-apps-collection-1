@@ -88,7 +88,6 @@ const Game = () => {
     }
 
     if (checkEatsFood(newSnakeHead, food, 2)) {
-      // ✅ FIX: grow the full snake (keep all segments)
       setSnake([newSnakeHead, ...snake])
       setFood(randomFoodPosition(GAME_BOUNDS.xMax, GAME_BOUNDS.yMax))
       setScore(score + SCORE_INCREMENT)
